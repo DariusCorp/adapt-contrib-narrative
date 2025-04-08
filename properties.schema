@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Slide show. Select the next button to progress.",
+      "default": "Diapozitive. Selectați butonul următor pentru a progresa.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -15,7 +15,7 @@
     "previous": {
       "type": "string",
       "required": true,
-      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Back to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Înapoi la {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} din {{totalItems}}){{/if}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -23,7 +23,7 @@
     "next": {
       "type": "string",
       "required": true,
-      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Forward to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Înainte la {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} din {{totalItems}}){{/if}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,9 +31,9 @@
     "titleDialog": {
       "type": "string",
       "required": true,
-      "title": "Dialog default title",
-      "description": "Default fallback title to use for dialog popups when not set on an item",
-      "default": "Item {{itemNumber}} of {{totalItems}}",
+      "title": "Titlul implicit al dialogului",
+      "description": "Titlul implicit de rezervă de utilizat pentru ferestrele pop-up de dialog atunci când nu este setat pe un element",
+      "default": "Elementul {{itemNumber}} din {{totalItems}}",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -41,8 +41,8 @@
     "titleStrapline": {
       "type": "string",
       "required": true,
-      "title": "Strapline default title",
-      "description": "Default fallback title to use for strapline buttons when not set on an item",
+      "title": "Titlu implicit al sloganului",
+      "description": "Titlul implicit de rezervă de utilizat pentru butoane atunci când nu sunt setate pe un articol",
       "default": "Find out more",
       "inputType": "Text",
       "validators": [],
@@ -53,6 +53,7 @@
     "_supportedLayout": {
       "type": "string",
       "required": true,
+      "title": "Format acceptat",
       "enum": ["full-width", "half-width", "both"],
       "default": "full-width",
       "editorOnly": true
@@ -60,75 +61,76 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the next and back arrows to find out more.",
+      "title": "Instrucțiuni",
+      "default": "Selectați săgețile înainte și înapoi pentru a afla mai multe.",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Acesta este textul pentru instrucțiuni",
       "translatable": true
     },
     "mobileInstruction": {
       "type": "string",
       "required": false,
-      "default": "Select the plus icon followed by the next arrow to find out more.",
-      "title": "Mobile Instruction",
+      "title": "Instrucțiuni pentru mobil",
+      "default": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",      
       "inputType": "Text",
       "validators": [],
-      "help": "This is the mobile only instruction text",
+      "help": "Acesta este textul de instrucțiuni numai pentru mobil",
       "translatable": true
     },
     "_isTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image",
+      "title": "Mutați zona de text sub imagine",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the text area drops below the image instead of being aside it"
+      "help": "Dacă este activată, zona de text va fi sub imagine în loc să fie lângă ea"
     },
     "_isMobileTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image on mobile",
+      "title": "Mutați zona de text sub imagine pe mobil",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button"
+      "help": "Dacă este activată, pe mobil, zona de text va fi sub imagine în loc să fie în spatele butonului sloganului"
     },
     "_isStackedOnMobile": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Stack images and text on mobile",
+      "title": "Stivuiți imagini și text pe mobil",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down."
+      "help": "Dacă este activat, pe mobil, textul și imaginile vor fi stivuite vertical. Nu va fi necesară nicio interacțiune pentru a vizualiza toate elementele, deoarece utilizatorul va derula pur și simplu în jos."
     },
     "_hasNavigationInTextArea": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move navigation to text area",
+      "title": "Mutarea navigării în zona de text",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, all navigation elements will be moved to the text area"
+      "help": "Dacă este activat, toate elementele de navigare vor fi mutate în zona de text"
     },
     "_setCompletionOn": {
       "type": "string",
       "required": true,
       "enum": ["inview", "allItems"],
       "default": "allItems",
-      "title": "Set completion on",
+      "title": "Setați finalizarea pe",
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": ["required"],
-      "help": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component"
+      "help": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele narative - sau doar a vizualizat componenta"
     },
     "_items": {
       "type": "array",
       "required": false,
-      "title": "Narrative items",
+      "title": "Elemente narative",
       "items": {
         "type": "object",
         "required": false,
@@ -137,7 +139,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative display title",
+            "title": "Titlul narativ afișat",
             "inputType": "Text",
             "validators": [],
             "help": "",
@@ -147,7 +149,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative main text",
+            "title": "Textul narativ principal",
             "inputType": "TextArea",
             "validators": [],
             "help": "",
@@ -155,13 +157,13 @@
           },
           "_graphic": {
             "type": "object",
-            "title": "Narrative graphic",
+            "title": "Grafică narativă",
             "properties": {
               "src": {
                 "type": "string",
                 "required": true,
                 "default": "",
-                "title": "Select Graphic",
+                "title": "Selectați grafica",
                 "inputType": "Asset:image",
                 "validators": ["required"],
                 "help": ""
@@ -170,19 +172,20 @@
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Alternative Text",
+                "title": "Text alternativ",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "O descriere a imaginii; necesară atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lăsați acest spațiu liber.",
                 "translatable": true
               },
               "attribution": {
                 "type": "string",
                 "required": false,
                 "default": "",
+                "title": "Atribuire",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Text care trebuie afișat ca atribuire",
                 "translatable": true
               }
             }
@@ -191,10 +194,10 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative strapline",
+            "title": "Slogan narativ",
             "inputType": "Text",
             "validators": [],
-            "help": "Optional if a succinct title is required for the strapline mobile layout. Leave empty to default to title text",
+            "help": "Opțional dacă este necesar un titlu succint pentru aspectul mobil al sloganului. Lăsați gol pentru textul implicit al titlului",
             "translatable": true
           }
         }

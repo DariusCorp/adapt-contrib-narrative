@@ -13,7 +13,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Aspect acceptat",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -26,49 +26,49 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the next and back arrows to find out more.",
+          "title": "Instrucțiuni",
+          "default": "Selectați săgețile înainte și înapoi pentru a afla mai multe.",
           "_adapt": {
             "translatable": true
           }
         },
         "mobileInstruction": {
           "type": "string",
-          "title": "Mobile instruction",
-          "description": "This is the mobile only instruction text",
-          "default": "Select the plus icon followed by the next arrow to find out more.",
+          "title": "Instrucțiuni pentru mobile",
+          "description": "Acesta este textul de instrucțiuni numai pentru mobil",
+          "default": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
           "_adapt": {
             "translatable": true
           }
         },
         "_isTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image",
-          "description": "If enabled, the text area drops below the image instead of being beside it",
+          "title": "Mutați zona de text sub imagine",
+          "description": "Dacă este activată, zona de text cadeva fi sub imagine în loc să fie lângă ea",
           "default": false
         },
         "_isMobileTextBelowImage": {
           "type": "boolean",
-          "title": "Move text area below image on mobile",
-          "description": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button",
+          "title": "Mutați zona de text sub imagine pe mobil",
+          "description": "Dacă este activată, pe mobil, zona de text va fi sub imagine în loc să fie în spatele butonului de strapline",
           "default": false
         },
         "_isStackedOnMobile": {
           "type": "boolean",
-          "title": "Stack images and text on mobile",
-          "description": "If enabled, on mobile, text and images will be stacked vertically. No interaction will be required to view all items as the user will simply scroll down.",
+          "title": "Stivuiți imagini și text pe mobil",
+          "description": "Dacă este activat, pe mobil, textul și imaginile vor fi stivuite vertical. Nu va fi necesară nicio interacțiune pentru a vizualiza toate elementele, deoarece utilizatorul va derula pur și simplu în jos.",
           "default": false
         },
         "_hasNavigationInTextArea": {
           "type": "boolean",
-          "title": "Move navigation to text area",
-          "description": "If enabled, all navigation elements will be moved to the text area",
+          "title": "Mutarea navigării în zona de text",
+          "description": "Dacă este activat, toate elementele de navigare vor fi mutate în zona de text",
           "default": false
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component",
+          "title": "Criterii de completare",
+          "description": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele narative - sau doar a vizualizat componenta",
           "default": "allItems",
           "enum": [
             "inview",
@@ -78,13 +78,13 @@
         },
         "_items": {
           "type": "array",
-          "title": "Items",
+          "title": "Elemente",
           "items": {
             "type": "object",
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
+                "title": "Titlu",
                 "description": "",
                 "default": "",
                 "_adapt": {
@@ -93,7 +93,7 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
+                "title": "Conținut",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -102,7 +102,7 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Grafic",
                 "default": {},
                 "required": [
                   "src"
@@ -110,7 +110,7 @@
                 "properties": {
                   "src": {
                     "type": "string",
-                    "title": "Source",
+                    "title": "Sursă",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -118,8 +118,8 @@
                   },
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Text alternativ",
+                    "description": "O descriere a imaginii; necesară atunci când are un înțeles care trebuie transmis elevului. Pentru imaginile 'decorative', lasă acest spațiu liber",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -127,8 +127,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution",
+                    "title": "Atribuire",
+                    "description": "Text care trebuie afișat ca atribuire",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -138,8 +138,8 @@
               },
               "strapline": {
                 "type": "string",
-                "title": "Strapline",
-                "description": "Optional if a succinct title is required for the strapline mobile layout. Leave empty to default to title text",
+                "title": "Slogan",
+                "description": "Opțional dacă este necesar un titlu succint pentru aspectul sloganului pe mobil. Lăsați gol pentru textul implicit al titlului",
                 "default": "",
                 "_adapt": {
                   "translatable": true

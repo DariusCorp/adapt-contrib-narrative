@@ -5,11 +5,11 @@
         "_component": "narrative",
         "_classes": "",
         "_layout": "full",
-        "title": "Narrative",
-        "displayTitle": "Narrative",
-        "body": "This is optional body text.",
-        "instruction": "Select the next and back arrows to find out more.",
-        "mobileInstruction": "Select the plus icon followed by the next arrow to find out more.",
+        "title": "Narativ",
+        "displayTitle": "Narativ",
+        "body": "Acesta este un text opțional.",
+        "instruction": "Selectați săgețile înainte și înapoi pentru a afla mai multe.",
+        "mobileInstruction": "Selectați pictograma plus urmată de săgeata următoare pentru a afla mai multe.",
         "_hasNavigationInTextArea": false,
         "_comment": "setCompletionOn = inview | allItems",
         "_setCompletionOn": "allItems",
@@ -18,8 +18,8 @@
         "_isStackedOnMobile": false,
         "_items": [
             {
-                "title": "Narrative item 1 title",
-                "body": "This is display text 1. If viewing on desktop or tablet, this text will appear to the right of the image. On mobile, you’ll need to select the plus icon to reveal this text.",
+                "title": "Titlul articolului narativ 1",
+                "body": "Acesta este textul de afișare 1. Dacă vizualizați pe desktop sau tabletă, acest text va apărea în dreapta imaginii. Pe mobil, va trebui să selectați pictograma plus pentru a afișa acest text.",
                 "_graphic": {
                     "src": "course/en/images/image-slider-1.jpg",
                     "alt": "",
@@ -28,8 +28,8 @@
                 "strapline": ""
             },
             {
-                "title": "Narrative item 2 title",
-                "body": "This is display text 2.",
+                "title": "Titlul articolului narativ 2",
+                "body": "Acesta este textul de afișare 2.",
                 "_graphic": {
                     "src": "course/en/images/image-slider-2.jpg",
                     "alt": "",
@@ -38,8 +38,8 @@
                 "strapline": ""
             },
             {
-                "title": "Narrative item 3 title",
-                "body": "This is display text 3.",
+                "title": "Titlul articolului narativ 3",
+                "body": "Acesta este textul de afișare 3.",
                 "_graphic": {
                     "src": "course/en/images/image-slider-3.jpg",
                     "alt": "",

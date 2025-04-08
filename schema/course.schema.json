@@ -18,47 +18,47 @@
               "properties": {
                 "_narrative": {
                   "type": "object",
-                  "title": "Narrative",
+                  "title": "Narativ",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "Slide show. Select the next button to progress.",
+                      "title": "Zonă ARIA",
+                      "default": "Diapozitive. Selectați butonul următor pentru a progresa.",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "previous": {
                       "type": "string",
-                      "title": "Previous",
-                      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Back to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+                      "title": "Precedent",
+                      "default": "{{#if isAtStart}}{{_globals._accessibility._ariaLabels.previous}}{{else}}{{#if title}}Inapoi la {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}} (item {{itemNumber}} din {{totalItems}}){{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "next": {
                       "type": "string",
-                      "title": "Next",
-                      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Forward to {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} of {{totalItems}}){{/if}}",
+                      "title": "Următor",
+                      "default": "{{#if isAtEnd}}{{_globals._accessibility._ariaLabels.next}}{{else}}{{#if title}}Înainte la {{{title}}}{{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}} (item {{itemNumber}} din {{totalItems}}){{/if}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "titleDialog": {
                       "type": "string",
-                      "title": "Dialog default title",
-                      "help": "Default fallback title to use for dialog popups when not set on an item",
-                      "default": "Item {{itemNumber}} of {{totalItems}}",
+                      "title": "Titlul implicit al dialogului",
+                      "help": "Titlul implicit de rezervă de utilizat pentru ferestrele pop-up de dialog atunci când nu este setat pe un element",
+                      "default": "Elementul {{itemNumber}} din {{totalItems}}",
                       "_adapt": {
                         "translatable": true
                       }
                     },
                     "titleStrapline": {
                       "type": "string",
-                      "title": "Strapline default title",
-                      "help": "Default fallback title to use for strapline buttons when not set on an item",
-                      "default": "Find out more",
+                      "title": "Titlul implicit al sloganului",
+                      "help": "Titlul implicit de rezervă utilizat pentru butoane atunci când nu sunt setate pe un articol",
+                      "default": "Află mai multe",
                       "_adapt": {
                         "translatable": true
                       }
